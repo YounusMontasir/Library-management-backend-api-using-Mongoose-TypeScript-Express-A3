@@ -211,7 +211,7 @@ Return summary of borrowed books
 
 Create a `.env` file in the root directory and add the following variables:
 
-```env
+env
 DB_NAME=your_mongodb_database
 DB_PASSWORD=your_mongodb_password
 
