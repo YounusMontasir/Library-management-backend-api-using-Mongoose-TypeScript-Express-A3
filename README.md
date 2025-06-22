@@ -211,9 +211,16 @@ Return summary of borrowed books
 
 Create a `.env` file in the root directory and add the following variables:
 
-env
+```env
 DB_NAME=your_mongodb_database
 DB_PASSWORD=your_mongodb_password
+
+# Setup & Run Locally
+
+```bash
+git clone https://github.com/YounusMontasir/Library-management-backend-api-using-Mongoose-TypeScript-Express-A3.git
+cd Library-management-backend-api-using-Mongoose-TypeScript-Express-A3
+npm install
 
 
 
