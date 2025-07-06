@@ -38,14 +38,13 @@ exports.booksRoutes.post("/", (req, res) => __awaiter(void 0, void 0, void 0, fu
 // get all books
 exports.booksRoutes.get("/", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { filter, sortBy = "createdAt", sort = "desc", limit } = req.query;
+        const { filter, sortBy = "createdAt", sort = "desc" } = req.query;
         const query = {};
         if (filter) {
             query.genre = filter;
         }
         const books = yield books_model_1.Book.find(query)
-            .sort({ [sortBy]: sort === "desc" ? -1 : 1 })
-            .limit(10);
+            .sort({ [sortBy]: sort === "desc" ? -1 : 1 });
         res.status(201).json({
             success: true,
             message: "Books retrieved successfully",
