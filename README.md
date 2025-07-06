@@ -45,6 +45,8 @@ This is a backend application for managing a library system built using **TypeSc
   "available": true
 }
 
+---
+
 ### 2. 📚 Get All Books
 
 **GET** `/api/books`
@@ -58,6 +60,8 @@ Supports filtering, sorting, and limiting.
 - `filter`: Filter by genre  
 - `sort`: asc or desc  
 - `limit`: Number of results (default: 10)  
+
+--- 
 
 **Response:**
 ```json
@@ -79,6 +83,8 @@ Supports filtering, sorting, and limiting.
     }
   ]
 }
+
+---
 
 ### 3. 🔍 Get Book by ID
 
@@ -102,6 +108,8 @@ Supports filtering, sorting, and limiting.
     "updatedAt": "..."
   }
 }
+---
+
 ### 4. ✏️ Update Book
 
 **PUT** `/api/books/:bookId`
@@ -130,7 +138,7 @@ Supports filtering, sorting, and limiting.
     "updatedAt": "..."
   }
 }
-
+---
 ### 5. ❌ Delete Book
 
 **DELETE** `/api/books/:bookId`
@@ -142,6 +150,9 @@ Supports filtering, sorting, and limiting.
   "message": "Book deleted successfully",
   "data": null
 }
+
+---
+
 ### 6. 📥 Borrow a Book
 
 **POST** `/api/borrow`
@@ -172,6 +183,9 @@ Supports filtering, sorting, and limiting.
     "updatedAt": "..."
   }
 }
+
+---
+ 
 ### 7. 📊 Borrowed Books Summary
 
 **GET** `/api/borrow`
@@ -206,6 +220,8 @@ Return summary of borrowed books
     }
   ]
 }
+
+---
 
 ## Environment Variables
 
